@@ -1,6 +1,8 @@
 # Previsão de Preços de Imóveis no Airbnb (Rio de Janeiro)
 
-Projeto de Machine Learning para previsão de preços de imóveis no Airbnb no Rio de Janeiro utilizando técnicas de análise exploratória e múltiplos modelos de regressão.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
 ## Contexto do Projeto
 
@@ -103,8 +105,9 @@ O modelo final conseguiu explicar aproximadamente **59% da variação dos preço
 ├── abril2020.csv
 │
 📄 data_science.ipynb
-📄 requirements.txt
+📄 modelo_airbnb.pkl
 📄 README.md
+📄 requirements.txt
 ```
 
 ## Como Executar o Projeto
@@ -180,6 +183,18 @@ Algumas melhorias que podem ser implementadas:
 - Aplicação de técnicas mais avançadas de feature engineering
 - Criação de uma API para previsão de preços
 - Construção de um dashboard interativo
+
+## Utilização do Modelo
+
+Após o treinamento, o modelo final pode ser salvo utilizando a biblioteca `joblib`.
+
+Exemplo:
+
+```
+import joblib
+
+joblib.dump(modelo_final, "modelo_airbnb.pkl")
+```
 
 ## Conclusão
 
