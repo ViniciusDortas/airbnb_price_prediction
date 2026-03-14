@@ -186,14 +186,14 @@ Algumas melhorias que podem ser implementadas:
 
 ## Utilização do Modelo
 
-Após o treinamento, o modelo final pode ser salvo utilizando a biblioteca `joblib`.
+Após o treinamento, o modelo final pode ser salvo utilizando a biblioteca `joblib` e utilizado da seguinte forma:
 
-Exemplo:
-
-```
+```python
 import joblib
 
-joblib.dump(modelo_final, "modelo_airbnb.pkl")
+modelo = joblib.load("modelo_airbnb.pkl")
+
+modelo.predict(novos_dados)
 ```
 
 ## Conclusão
